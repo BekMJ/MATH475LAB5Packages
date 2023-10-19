@@ -1,5 +1,18 @@
 #This is a model R function that you can alter for other statistics
 # Copy this function twice and alter the two copies to make sampling distributions from the T distribution
+#' Title
+#'
+#' @param n1
+#' @param sigma1
+#' @param mean1
+#' @param iter
+#' @param ymax
+#' @param ...
+#'
+#' @return
+#' @export
+#'
+#' @examples
 mychisim<-function(n1=10,sigma1=3,mean1=5,iter=1000,ymax=0.1,...){    # adjust ymax to make graph fit
   y1=rnorm(n1*iter,mean=mean1,sd=sigma1)# generate iter samples of size n1
 
