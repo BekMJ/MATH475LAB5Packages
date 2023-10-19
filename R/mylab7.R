@@ -39,6 +39,22 @@ chisq=mychisim(iter=10000,ymax=0.15)
 
 
 #### Two pop sampling
+#' Title
+#'
+#' @param n1
+#' @param n2
+#' @param sigma1
+#' @param sigma2
+#' @param mean1
+#' @param mean2
+#' @param iter
+#' @param ymax
+#' @param ...
+#'
+#' @return
+#' @export
+#'
+#' @examples
 mychisim2<-function(n1=10,n2=14,sigma1=3,sigma2=3,mean1=5,mean2=10,iter=1000,ymax=0.07,...){    # adjust ymax to make graph fit
   y1=rnorm(n1*iter,mean=mean1,sd=sigma1)# generate iter samples of size n1
   y2=rnorm(n2*iter,mean=mean2,sd=sigma2)
@@ -60,6 +76,22 @@ mychisim2<-function(n1=10,n2=14,sigma1=3,sigma2=3,mean1=5,mean2=10,iter=1000,yma
 windows()
 mychisim2(iter=10000)
 
+#' Title
+#'
+#' @param n1
+#' @param n2
+#' @param sigma1
+#' @param sigma2
+#' @param mean1
+#' @param mean2
+#' @param iter
+#' @param ymax
+#' @param ...
+#'
+#' @return
+#' @export
+#'
+#' @examples
 myTsim2<-function(n1=10,n2=14,sigma1=3,sigma2=3,mean1=5,mean2=10,iter=1000,ymax=0.5,...){
   y1=rnorm(n1*iter,mean=mean1,sd=sigma1)# generate iter samples of size n1
   y2=rnorm(n2*iter,mean=mean2,sd=sigma2)
@@ -83,6 +115,22 @@ myTsim2<-function(n1=10,n2=14,sigma1=3,sigma2=3,mean1=5,mean2=10,iter=1000,ymax=
 myTsim2(iter=10000)
 
 
+#' Title
+#'
+#' @param n1
+#' @param n2
+#' @param sigma1
+#' @param sigma2
+#' @param mean1
+#' @param mean2
+#' @param iter
+#' @param ymax
+#' @param ...
+#'
+#' @return
+#' @export
+#'
+#' @examples
 myFsim2<-function(n1=10,n2=14,sigma1=3,sigma2=2,mean1=5,mean2=10,iter=1000,ymax=0.9,...){
   y1=rnorm(n1*iter,mean=mean1,sd=sigma1)# generate iter samples of size n1
   y2=rnorm(n2*iter,mean=mean2,sd=sigma2)
